@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.form select, .form input {
+    margin: 5px;
+    padding: 6px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.status-box {
+    margin: 15px 0;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}

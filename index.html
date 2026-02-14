@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Asset Risk Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Asset Aging Index Dashboard</h2>
+
+    <div class="form">
+        <select id="function">
+            <option value="4">Safety</option>
+            <option value="3">Alarm</option>
+            <option value="2">Control</option>
+            <option value="1">Monitor</option>
+        </select>
+
+        <select id="risk">
+            <option value="4">High</option>
+            <option value="3">Under High</option>
+            <option value="2">Upper Low</option>
+            <option value="1">Low</option>
+        </select>
+
+        <select id="condition">
+            <option value="1">New</option>
+            <option value="2">Good</option>
+            <option value="3">Poor</option>
+            <option value="4">Bad</option>
+        </select>
+
+        <input type="date" id="installDate">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div class="status-box" id="statusBox">
+        Status: -
+    </div>
+
+    <canvas id="gaugeChart"></canvas>
+    <canvas id="barChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
